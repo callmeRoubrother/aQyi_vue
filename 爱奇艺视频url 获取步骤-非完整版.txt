@@ -1,0 +1,47 @@
+1. html 页面上获取视频的这俩个参数
+	1398887600/3a54fdb66342914453e480013d80cb1e
+
+	<li glue-node="item" class=" selected " 
+	data-tvid="1400303500" 
+	data-vid="03c1a84a3e17e220b01e44b65ac3d4c7" 
+	data-href="//m.iqiyi.com/v_19rr59wmw0.html#vfrm=30-28-15-7" 
+	data-rseat="605251_episode" data-count="0">
+	<a href="//m.iqiyi.com/v_19rr59wmw0.html#vfrm=30-28-15-7" class="rank-link" title="孟鹤堂开嗓“柳活”震全场">
+
+2. 返回视频url数据
+	http://cache.m.iqiyi.com/jp/tmts/1398887600/3a54fdb66342914453e480013d80cb1e/?uid=&cupid=qc_100001_100186&platForm=h5&qyid=1qse5dxexvpiirit047tpmpu&agenttype=13&type=mp4&nolimit=&k_ft1=8&rate=1&sgti=13_1qse5dxexvpiirit047tpmpu_1539002102519&codeflag=1&preIdAll=&dfp=a042983d5664bb4d4e937051a44f6bd1e857dd88e8c28ec11a5cce2b4a4357cbb6&pv=0&qd_v=1&qdy=a&qds=0&tm=1539002102&src=02020031010000000000&vf=6ba9f25cbf152c31f796b1d20166887f&callback=tmtsCallback
+
+	请求参数
+		uid	
+		cupid	qc_100001_100186    
+		platForm	h5
+		qyid	1qse5dxexvpiirit047tpmpu (cookie  ; QC006)  
+		agenttype	13
+		type	mp4
+		nolimit	
+		k_ft1	8
+		rate	1
+		codeflag	1
+		preIdAll	
+		dfp	a042983d5664bb4d4e937051a44f6bd1e857dd88e8c28ec11a5cce2b4a4357cbb6 (cookie  ; __dfp)  
+		pv	0
+		qd_v	1
+		qdy	a
+		qds	0
+		src	02020031010000000000
+		callback	tmtsCallback
+		tm	1539000802 时间戳
+
+		vf	3a02dfc156099aeb8c5a88d2f03f322b  ？
+		sgti	13_1qse5dxexvpiirit047tpmpu_1539000802674 ？
+
+	返回结果
+		try{tmtsCallback({"timestamp":"20181008201324","data":{"vidl":[{"screenSize":"640x360","vd":2,"vid":"6adc15de778e2a287fd98ffa039775b3","lgt":0},{"screenSize":"480x272","vd":1,"vid":"4eee7d6f12e697a1a376ed3968aaab72","lgt":0}],"pano":{"type":1,"rType":0},"messageId":"","ugc":0,"vid":"03c1a84a3e17e220b01e44b65ac3d4c7","cacheTime":1539000057501,"lgh":[],"m3utx":"","um":0,"tipType":"","m3u":"http:\/\/121.9.223.219\/videos\/v0\/20181007\/36\/fd\/f0bc35399ce9e02331340b5d214a1994.mp4?key=054c4d413c10160958d2d48767089eb87&dis_k=2d7596a342a007e3f41f37a6f6277067d&dis_t=1539000804&dis_dz=CT-GuangDong_ShenZhen&dis_st=44&src=iqiyi.com&uuid=a795b67-5bbb49e4-b2&m=v&qd_k=3a02dfc156099aeb8c5a88d2f03f322b&sgti=13_1qse5dxexvpiirit047tpmpu_1539000802674&qd_ip=b7113fbf&qd_p=b7113fbf&dfp=a042983d5664bb4d4e937051a44f6bd1e857dd88e8c28ec11a5cce2b4a4357cbb6&qd_src=02020031010000000000&ssl=&ip=183.17.63.191&qd_vip=0&dis_src=vrs&qd_uid=0&qdv=1&qd_tm=1539000804673","ad":1,"exclusive":0,"tvid":1400303500,"previewTime":"","screenSize":"480x272","adDuration":0,"head":0,"vd":1,"rTime":"","ds":"A00012","isProduced":0,"prv":"","wmarkPos":0,"aid":228584101,"thdt":1,"clientIp":"183.17.63.191","cid":6,"tail":0,"previewType":"","duration":5390,"lgt":0,"vipTypes":[0],"bossStatus":0},"code":"A00000"});}catch(e){};
+
+3. 视频url
+	http://121.9.223.204/videos/v0/20181006/e7/ac/e94306d1cef595e89bbf91e6fbc2f29c.mp4?key=03fc2cc9041f312c14dd46e707f90692b&dis_k=2bb9a3339c531afa98ced58ac06176575&dis_t=1539002104&dis_dz=CT-GuangDong_ShenZhen&dis_st=44&src=iqiyi.com&uuid=a795cf7-5bbb4ef8-b2&m=v&qd_k=6ba9f25cbf152c31f796b1d20166887f&sgti=13_1qse5dxexvpiirit047tpmpu_1539002102519&qd_ip=b7113fbf&qd_p=b7113fbf&dfp=a042983d5664bb4d4e937051a44f6bd1e857dd88e8c28ec11a5cce2b4a4357cbb6&qd_src=02020031010000000000&ssl=&ip=183.17.63.191&qd_vip=0&dis_src=vrs&qd_uid=0&qdv=1&qd_tm=1539002104541&qypid=1398887600_31
+	
+	
+	
+	
+爱奇艺开发者平台：http://open.iqiyi.com/lib/play/api.html#A2	

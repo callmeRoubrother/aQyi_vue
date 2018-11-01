@@ -1,0 +1,49 @@
+@import "./lib/reset";
+html{
+  .container {
+    @include flexbox();
+    @include flex-direction(column);
+    @include rect(100%, 100%);
+    .header {
+      @include rect(100%, 0.44rem);
+      @include background-color(#2e2e30);
+      @include text-color(#ccc);
+      @include flexbox();
+      .logo{
+        @include rect(.73rem, .24rem);
+      }
+      div{
+        @include rect(auto, 100%);
+        @include line-height(.44rem);
+      }
+      ul{
+        @include rect(100%, 100%);
+        @include line-height(.44rem);
+        @include flexbox();
+        @include justify-content(space-around);
+        li{
+          @include rect(100%, 100%);
+          @include text-align();
+        }
+      }
+    }
+    .content {
+      @include flex();
+      @include rect(100%, auto);
+      @include overflow();
+    }
+    .footer {
+      @include rect(100%, 0.5rem);
+      @include background-color(#f9f9f9);
+    }
+  }
+}
+.fade-enter{
+  transform: translateX(100%);
+}
+.fade-enter-to{
+
+}
+.fade-enter-active{
+  transition: all .3s ease;
+}
